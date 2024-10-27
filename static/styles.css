@@ -1,0 +1,148 @@
+    body {
+        font-family: 'Arial', sans-serif; /* Choose a font family */
+        font-size: 16px; /* Base font size */
+        line-height: 1.6; /* Line height for better readability */
+        color: #f8f9fa; /* Light text color for contrast against dark background */
+        background-color: #1c1c1c; /* Greyish black background */
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Remove default padding */
+    }
+
+        h1 {
+            font-family: sans-serif /* Italian font for the title */
+            font-size: 48px; /* Adjust size as needed */
+            color: #eaeaea; /* Light color for headings */
+            font-weight: 700; /* Set font weight to bold */
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif; /* Font for headings */
+            color: #eaeaea; /* Light color for headings */
+            margin-bottom: 0.5rem; /* Space below headings */
+            font-weight: 700; /* Set font weight to bold */
+        }
+
+        p {
+            margin-bottom: 1rem; /* Space below paragraphs */
+            text-align: justify; /* Justify text */
+        }
+
+a {
+    color: #1c1c1c; /* Dark grey color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition effect */
+}
+
+a:hover {
+    color: #a9a9a9; /* Darker color (black) on hover */
+    text-decoration: none; /* No underline */
+}
+
+.navbar {
+    padding: 1rem 2rem; /* Increase padding for a wider navbar */
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Arial', sans-serif; /* Change to a normal font */
+    color: white; /* Color of the nav links */
+    font-size: 18px; /* Font size */
+    margin-right: 30px; /* Increase spacing between items */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a9a9a9; /* Change link color on hover */
+    text-decoration: none; /* Underline on hover */
+}
+
+
+.navbar-toggler {
+    border: none; /* Remove default border */
+}
+
+  .carousel-inner {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    position: relative;
+  }
+
+  /* Image styling with darkening filter */
+  .carousel-item img {
+    width: 100%;               /* Make image fit the width */
+    height: auto;              /* Keep the aspect ratio */
+    filter: brightness(50%);    /* Darken the image */
+    object-fit: cover;          /* Ensure the image covers the area */
+    object-position: center;    /* Center the image */
+  }
+
+  .fixed-top {
+    background: linear-gradient(to bottom, #4B0082, #3A3A3A); /* Dark purple to greyish black */
+    z-index: 1030; /* Ensure it stays above other elements */
+}
+
+a.btn.btn-primary{
+color: #1c1c1c;
+background-color: white;
+border-color: #1c1c1c;
+}
+
+a.btn.btn-primary:hover {
+color: white;
+background-color: #1c1c1c;
+border-color: white;
+}
+
+/* General card styles */
+.card-hover {
+    position: relative; /* For overlay positioning */
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+    background-color: white; /* Ensure the background stays white */
+}
+
+/* On hover, scale the card */
+.card-hover:hover {
+    transform: scale(1.1); /* Enlarge card on hover */
+    z-index: 10; /* Bring the hovered card to the front */
+}
+
+/* Set text color for card content */
+.card-hover h5, .card-hover h6, .card-hover p, .card-hover a {
+    color: #1c1c1c; /* Dark color for text */
+    transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+/* Ensure text color remains the same on hover */
+.card-hover:hover h5, .card-hover:hover h6, .card-hover:hover p, .card-hover:hover a {
+    color: #1c1c1c; /* Keep the same dark text color on hover */
+}
+
+/* Dim the non-hovered cards */
+.card-hover:not(:hover) {
+    opacity: 0.5; /* Reduce opacity for non-hovered cards */
+}
+
+/* Dark overlay for non-hovered cards */
+.card-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+    z-index: -1; /* Keep the overlay behind the content */
+}
+
+.card-hover:not(:hover)::before {
+    opacity: 1;
+
+.text-body-secondary {
+color: white;
+}
+
+.footer-icons svg {
+  fill: white;
+}
+
